@@ -22,10 +22,10 @@ def main():
     st.write('Enter the employee details to predict their happiness.')
 
     # Get user inputs
-    occupation = st.number_input('Occupation')
-    salary = st.number_input('Salary')
-    level = st.number_input('Level')
-    vacation = st.number_input('Vacation')
+    occupation = st.number_input('Occupation', min_value=0, max_value=5, step=1)
+    salary = st.number_input('Salary', min_value=100000, max_value=750000, step=1)
+    level = st.number_input('Level', min_value=0, max_value=2, step=1)
+    vacation = st.number_input('Vacation', min_value=0, max_value=1, step=1)
 
     # Make the prediction when the user clicks the 'Predict' button
     if st.button('Predict'):
