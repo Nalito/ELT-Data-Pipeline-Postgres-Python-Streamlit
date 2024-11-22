@@ -34,7 +34,7 @@ While the Flask server is still running, run ingest.py to fetch the data and pla
 $ (venv) python ingest.py
 ```
 ## Model Development
-All the steos used to fetch the data from the databse, preprocess it and build the machine learning model are contained in prediction.ipynb.
+All the steps used to fetch the data from the databse, preprocess it and build the machine learning model are contained in prediction.ipynb.
 
 ## Streamlit Deployment
 ```
